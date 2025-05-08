@@ -11,7 +11,7 @@ A robust plant disease classification system using a hybrid **CNN-SVM** architec
 
 This project implements a machine learning solution to identify and classify various plant diseases from leaf images. The system leverages:
 
-- **Convolutional Neural Networks (CNN)** for feature extraction
+- **Convolutional Neural Networks (CNN)** and **Vistion Transformers** for feature extraction
 - **Support Vector Machines (SVM)** for classification
 - **Flask** for web application deployment
 
