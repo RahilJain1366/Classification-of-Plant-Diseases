@@ -61,7 +61,7 @@ The complete dataset for training and testing is available for download:
 
 5. **Run the application**
    ```bash
-   python app.py
+   python <python scripts starting with app>
    ```
 
 6. **Access the web interface**
