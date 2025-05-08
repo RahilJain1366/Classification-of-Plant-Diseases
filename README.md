@@ -1,39 +1,105 @@
 # Classification of Plant Diseases
 
-This project implements a **plant disease classification system** using a **custom CNN-SVM** architecture. The model is designed to classify images of plant leaves and predict the disease based on their visual features.
+![Plant Disease Classification](https://img.shields.io/badge/AI-Plant%20Disease%20Classification-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Flask](https://img.shields.io/badge/Flask-2.x-lightgrey)
 
-## Project Overview
+A robust plant disease classification system using a hybrid **CNN-SVM** architecture to identify diseases in plant leaves from images.
 
-- **Objective**: To classify plant diseases using a hybrid model that combines Convolutional Neural Networks (CNN) for feature extraction and Support Vector Machines (SVM) for classification.
-- **Dataset**: The dataset for training and testing is available for download [here](https://utdallas.box.com/s/nakpwnwuh7yprafdatb1geu4vxv8oy2n).
+## 📋 Project Overview
 
-## Features
+This project implements a machine learning solution to identify and classify various plant diseases from leaf images. The system leverages:
 
-- **Image Upload**: Users can upload plant leaf images, and the model will predict the disease.
-- **Hybrid Architecture**: Combines CNN for feature extraction and SVM for classification, ensuring accuracy and efficiency.
-- **Flask App**: The model is served via a Flask application for easy deployment and testing.
+- **Convolutional Neural Networks (CNN)** for feature extraction
+- **Support Vector Machines (SVM)** for classification
+- **Flask** for web application deployment
 
-## Installation
+## 🌿 Dataset
 
-Follow the steps below to set up the project locally:
+The complete dataset for training and testing is available for download:
+- [Download Plant Disease Dataset](https://utdallas.box.com/s/nakpwnwuh7yprafdatb1geu4vxv8oy2n)
 
-### 1. Clone the repository
+## ✨ Features
 
-Clone this repository to your local machine:
+- **Accurate Disease Classification**: Identify plant diseases with high accuracy
+- **Hybrid CNN-SVM Architecture**: Combines the feature extraction capabilities of CNNs with the classification power of SVMs
+- **User-Friendly Interface**: Upload plant leaf images through a simple web interface
+- **Real-Time Predictions**: Get instant disease classification results
+- **Scalable Design**: Architecture can be expanded to identify more plant diseases
 
-```bash
-git clone https://github.com/RahilJain1366/Classification-of-Plant-Diseases.git
-cd Classification-of-Plant-Diseases
+## 🚀 Installation
 
-pip install -r requirements.txt
+### Prerequisites
 
-mkdir -p models static/upload
+- Python 3.7 or higher
+- pip package manager
 
+### Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/RahilJain1366/Classification-of-Plant-Diseases.git
+   cd Classification-of-Plant-Diseases
+   ```
+
+2. **Create a virtual environment (recommended)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Create necessary directories**
+   ```bash
+   mkdir -p models static/upload
+   ```
+
+5. **Run the application**
+   ```bash
+   python app.py
+   ```
+
+6. **Access the web interface**
+   - Open your browser and go to: http://127.0.0.1:5000/
+
+## 📁 Project Structure
+
+```
 Classification-of-Plant-Diseases/
 │
 ├── app.py                # Flask application entry point
 ├── requirements.txt      # Python dependencies
-├── models/               # Folder for storing model files
-├── static/               # Folder for static files (images, uploads)
-│   └── upload/           # Folder for storing uploaded images
-└── templates/            # HTML templates for the Flask app
+├── models/               # Trained model files
+├── static/               # Static files (CSS, JS, images)
+│   └── upload/           # Uploaded images storage
+└── templates/            # HTML templates for the web interface
+```
+
+## 🖥️ Usage
+
+1. Navigate to the web interface at http://127.0.0.1:5000/
+2. Upload an image of a plant leaf
+3. Click "Submit" to get the disease classification results
+
+## 🔬 Model Architecture
+
+The classification system uses a hybrid approach:
+- **CNN**: Extracts relevant features from plant leaf images
+- **SVM**: Uses these features to classify the disease with high accuracy
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📧 Contact
+
+For questions or feedback, please reach out to rahiljain1366@gmail.com
+
+---
+
+*Note: This project is for educational purposes and should not replace professional agricultural advice.*
