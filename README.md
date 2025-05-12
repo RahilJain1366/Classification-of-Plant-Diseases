@@ -5,7 +5,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Flask](https://img.shields.io/badge/Flask-2.x-lightgrey)
 
-A robust plant disease classification system using a hybrid **CNN-SVM** architecture to identify diseases in plant leaves from images.
+This project presents a real-time plant disease classification system using multispectral drone imagery and a hybrid deep learning model. An initial CNN-SVM approach achieved 87\% accuracy, with the CNN alone reaching 97\% training accuracy within just 10 epochs. To improve performance, Vision Transformers (ViTs) were integrated with the CNN for feature extraction, and the combined features were classified using an RBF-kernel SVM. This hybrid architecture achieved an overall accuracy of 91.12\% across 23 plant disease categories. Deployed via a Flask-based API, the system enables scalable, real-time inference in agricultural settings and offers a robust alternative to traditional NDVI-based methods.
 
 ## 📋 Project Overview
 
